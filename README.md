@@ -39,7 +39,7 @@ def max_rating(category):
                 data.append({'data_id': data_id, 'article': article, 'product_name': product_name,'rating': rating, 'price': price, 'price_discount': price_discount})
 
 
-        if len(entries) < 60: # признак остановки - последняя страница включительно
+        if len(entries) < 60: # признак остановки - последняя страница содержит менее 60 элементов
             break
         page_num += 1 # переход на следующую страницу каталога 
     return data 
